@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>串門子雲端事業</title>
+    <!-- TemplateEndEditable -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../jasny-bootstrap/css/jasny-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../icomoon/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+    <script src="../js/map.js"></script>
+    <style type="text/css">
+        body{
+            font-family:"verdana","微軟正黑體" ; font-weight:400;
+        }
+    </style>
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+</head>
+
+<body>
+    <!--↓↓↓↓↓↓↓↓↓↓
+
+                    Public version
+
+                                    ↓↓↓↓↓↓↓↓↓↓ -->
+    <div class="top-bar hidden-xs">
+        <div class="top_img col-lg-3 col-md-3 col-sm-4 col-xs-12" align="center">
+            <img src="../img/life-link_logo.png" width="230px" alt="串門子雲端">
+        </div>
+        <div class="top_img col-lg-8 col-md-8 col-sm-7  hidden-xs" align="center">
+            <img src="../img/slogn.png" width="370px" alt="LIFE LINK在地生活，緊密串聯">
+        </div>
+    </div>
+    <!--↓↓↓↓↓↓↓↓↓↓
+                phone 
+                                ↓↓↓↓↓↓↓↓↓↓ -->
+    <nav class="navbar navbar-default visible-xs navbar-fixed-top top-nav-collapse">
+        <div class="container-fluid col-xs-12">
+            <div class=" navbar-default navbar-fixed-top" align="">
+                <div class="navbar-header">
+                    <div class="col-xs-12 xs-top-img">
+                        <img src="../img/life-link_logo.png" width="180px" alt="串門子雲端">
+                    </div>
+                    <button type="botton" class="navbar-toggle " data-toggle="offcanvas" data-target=".navmenu" data-canvas="body" style="margin-left:15px;top: -90px ">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="member-bar" style="margin-top: -61px">
+                        <ul class="drop-down-menu">
+                            <li class="login-t hidden-xs"> <span>登入時間：2016-07-22 09:12:50</span></li>
+                            <li class="col-lg-7 col-md-6 col-sm-4 col-xs-3"></li>
+                            <li class="member-info "><a href="#">操作手冊<span class="icon-a"></span></a>
+                                <ul>
+                                    <li> <a href="#">操作手冊</a></li>
+                                    <li> <a href="#">操作手冊</a></li>
+                                    <li> <a href="#">操作手冊</a></li>
+                                </ul>
+                            </li>
+                            <li class="member-info"><span class="icon-b" style="margin-right: 2px;"></span>8899</li>
+                            <li class="member-info"><a href="#">PEGGY 您好<span class="icon-a"></span></a>
+                                <ul>
+                                    <li> <a href="#">會員中心</a></li>
+                                    <li> <a href="#">會員登出</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+                <div class="side-bar hidden-lg hidden-md hidden-sm">
+                    <ul>
+                        <li><span style="color: #fff;font-size: 15px">登入時間：2016-07-22 09:12:50</span></li>
+                        <li class="b-bar">客戶資料</li>
+                        <li>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td style="border-top: 0px">系統ID</td>
+                                        <td style="border-top: 0px" align="right">16080010</td>
+                                    </tr>
+                                    <tr>
+                                        <td>登入帳號</td>
+                                        <td align="right">0971129588</td>
+                                    </tr>
+                                    <tr>
+                                        <td>購買日期</td>
+                                        <td align="right">2016.8.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>名稱或暱稱</td>
+                                        <td align="right">碳佐麻里</td>
+                                    </tr>
+                                    <tr>
+                                        <td>商品名稱</td>
+                                        <td align="right">實體店面</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>
+                            <button type="button" style="background: #555192"><a href="#" style="color:#fff">線上註冊</a></button>
+                            <button type="button" style="background: #128289;margin-left: 6px"><a href="#" style="color:#fff">寶物兌換</a></button>
+                        </li>
+                        <li>
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr>
+                                        <td style="border-top: 0px">註冊積分</td>
+                                        <td style="border-top: 0px" align="right">1,996,049,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>紅利積分</td>
+                                        <td align="right">200,000,000
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>購物積分</td>
+                                        <td align="right">66,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>串串積分</td>
+                                        <td align="right">7,801,440</td>
+                                    </tr>
+                                    <tr>
+                                        <td>集滿卡數</td>
+                                        <td align="right">9</td>
+                                    </tr> 
+                                    <tr>
+                                        
+                                        <td colspan="2">福袋樹明細<br><select name="pudid" id="pudids" style="width: 135px; margin-left: 2px">
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select></td>
+                                    </tr> 
+                                </tbody>
+                            </table>
+                        </li>
+                        <li><span style="color: #ab9777;">購買人數競賽</span></li>
+                        <li>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div style="width: 125px; height: 110px; ">
+                                               
+                                                <div style="margin-top: 5px; margin-left: 10px">
+                                                    <div class="circle"></div>
+                                                    <div class="circle_min"></div>
+                                                    <div class="circle_m_m"></div>
+                                                    <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                                </div>
+                                                <div align="center"> <span style="color: #ab9777;font-size:14px">新人購買</span></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div style="width: 125px; height: 110px; ">
+                                                
+                                                <div style="margin-top: 5px; margin-left: 10px">
+                                                    <div class="circle"></div>
+                                                    <div class="circle_min"></div>
+                                                    <div class="circle_m_m"></div>
+                                                    <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                                </div>
+                                                <div  align="center"><span style="color: #ab9777;font-size:14px">拆福袋數</span></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li style="border-bottom:1px dashed #ab9777"></li>
+                        <li><span style="color: #ab9777;">粉絲人數競賽</span></li>
+                        <li>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div style="width: 125px; height: 110px; ">
+                                                
+                                                <div style="margin-top: 5px; margin-left: 10px">
+                                                    <div class="circle"></div>
+                                                    <div class="circle_min"></div>
+                                                    <div class="circle_m_m"></div>
+                                                    <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                                </div>
+                                                <div align="center"><span style="color: #ab9777;font-size:14px">直接粉絲數</span></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div style="width: 125px; height: 110px; ">
+                                                
+                                                <div style="margin-top: 5px; margin-left: 10px">
+                                                    <div class="circle"></div>
+                                                    <div class="circle_min"></div>
+                                                    <div class="circle_m_m"></div>
+                                                    <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                                </div>
+                                                <div align="center"><span style="color: #ab9777;font-size:14px">間接粉絲數</span></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="b-bar">最新公告</li>
+                        <li>
+                            <div class="new-t">◆至年底前，直接分享好友使用本系統人數達100位者送紅利積分2000點，3代關係團體數達1000位者另贈1.000點。</div>
+                            <div class="new-t">◆至年底前，直接分享好友使用本系統人數達100位者送紅利積分2000點，3代關係團體數達1000位者另贈1.000點。</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--↑↑↑↑↑↑↑↑
+                phone 
+                                ↑↑↑↑↑↑↑↑ -->
+    <!--↓↓↓↓↓↓↓↓↓↓
+                Desktop 
+                                ↓↓↓↓↓↓↓↓↓↓ -->
+    <div class="member-bar hidden-xs">
+        <ul class="drop-down-menu">
+            <li class="login-t hidden-xs"> <span>登入時間：2016-07-22 09:12:50</span></li>
+            <li class="col-lg-7 col-md-6 col-sm-4 col-xs-4"></li>
+            <li class="member-info "><a href="#">操作手冊<span class="icon-a"></span></a>
+                <ul>
+                    <li> <a href="#">操作手冊</a></li>
+                    <li> <a href="#">操作手冊</a></li>
+                    <li> <a href="#">操作手冊</a></li>
+                </ul>
+            </li>
+            <li class="member-info"><span class="icon-b" style="margin-right: 2px;"></span>8899</li>
+            <li class="member-info"><a href="#">PEGGY 您好<span class="icon-a"></span></a>
+                <ul>
+                    <li> <a href="#">會員中心</a></li>
+                    <li> <a href="#">會員登出</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-4">
+        <div class="side-bar hidden-xs ">
+            <ul>
+                <li style="margin-top: 0" class="b-bar">客戶資料</li>
+                <li>
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td style="border-top: 0px">系統ID</td>
+                                <td style="border-top: 0px" align="right">16080010</td>
+                            </tr>
+                            <tr>
+                                <td>登入帳號</td>
+                                <td align="right">0971129588</td>
+                            </tr>
+                            <tr>
+                                <td>購買日期</td>
+                                <td align="right">2016/8/25</td>
+                            </tr>
+                            <tr>
+                                <td>名稱或暱稱</td>
+                                <td align="right">碳佐麻里</td>
+                            </tr>
+                            <tr>
+                                <td>商品名稱</td>
+                                <td align="right">實體店面</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li>
+                    <button type="button" style="background: #555192"><a href="#" style="color:#fff">線上註冊</a></button>
+                    <button type="button" style="background: #128289;margin-left: 6px"><a href="#" style="color:#fff">寶物兌換</a></button>
+                </li>
+                <li>
+                    <table class="table table-hover">
+                        <tbody>
+                            <tr>
+                                <td style="border-top: 0px">註冊積分</td>
+                                <td style="border-top: 0px" align="right">1,996,049,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>紅利積分</td>
+                                <td align="right">200,000,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>購物積分</td>
+                                <td align="right">66,000</td>
+                            </tr>
+                            <tr>
+                                <td>串串積分</td>
+                                <td align="right">7,801,440</td>
+                            </tr>
+                                    <tr>
+                                        <td>集滿卡數</td>
+                                        <td align="right">9</td>
+                                    </tr> 
+                                    <tr>
+                                        <td colspan="2">福袋樹明細<br><select name="pudid" id="pudidss" style="width: 135px; margin-left: 2px">
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </select></td>
+                                       
+                                    </tr> 
+                        </tbody>
+                    </table>
+                </li>
+
+                <li><span style="color: #ab9777;">購買人數競賽</span></li>
+                <li>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="width: 125px; height: 110px; ">
+                                        
+                                        <div style="margin-top: 5px; margin-left: 10px">
+                                            <div class="circle"></div>
+                                            <div class="circle_min"></div>
+                                            <div class="circle_m_m"></div>
+                                            <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                        </div>
+                                        <div align="center"><span style="color: #ab9777;font-size:14px">新人購買</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="width: 125px; height: 110px; ">
+                                        
+                                        <div style="margin-top: 5px; margin-left: 10px">
+                                            <div class="circle"></div>
+                                            <div class="circle_min"></div>
+                                            <div class="circle_m_m"></div>
+                                            <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                        </div>
+                                        <div align="center"><span style="color: #ab9777;font-size:14px">拆福袋數</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li style="border-bottom:1px dashed #ab9777"></li>
+                <li ><span style="color: #ab9777;">粉絲人數競賽</span></li>
+                <li>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div style="width: 125px; height: 110px; ">
+                                        
+                                        <div style="margin-top: 5px; margin-left: 10px">
+                                            <div class="circle"></div>
+                                            <div class="circle_min"></div>
+                                            <div class="circle_m_m"></div>
+                                            <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                        </div>
+                                        <div align="center"><span style="color: #ab9777;font-size:14px">直接粉絲數</span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div style="width: 125px; height: 110px; ">
+                                      
+                                        <div style="margin-top: 5px; margin-left: 10px">
+                                            <div class="circle"></div>
+                                            <div class="circle_min"></div>
+                                            <div class="circle_m_m"></div>
+                                            <span style="position: relative;top: -35px;left: 20px">35/1K</span>
+                                        </div>
+                                        <div align="center">  <span style="color: #ab9777;font-size:14px">間接粉絲數</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+                <li class="b-bar">最新公告</li>
+                <li>
+                    <div class="new-t">◆至年底前，直接分享好友使用本系統人數達100位者送紅利積分2000點，3代關係團體數達1000位者另贈1.000點。</div>
+                    <div class="new-t">◆至年底前，直接分享好友使用本系統人數達100位者送紅利積分2000點，3代關係團體數達1000位者另贈1.000點。</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--↑↑↑↑↑↑↑↑
+                    Desktop 
+                    Public version
+                                    ↑↑↑↑↑↑↑↑↑↑ -->
+    <!--↓↓↓↓↓↓↓↓↓↓
+
+                     content
+
+                                    ↓↓↓↓↓↓↓↓↓↓↓-->
+    <!-- TemplateBeginEditable name="EditRegion1" -->EditRegion1<!-- TemplateEndEditable -->
+ 
+    <!--↑↑↑↑↑↑↑↑
+                    content
+                                    ↑↑↑↑↑↑↑↑↑↑ -->
+</body>
+
+</html>

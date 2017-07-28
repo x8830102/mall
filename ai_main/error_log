@@ -1,0 +1,2 @@
+[28-Jan-2016 16:32:11 Asia/Taipei] PHP Warning:  require_once(Connections/ms.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/shiking/public_html/ai_main/ai_in.php on line 1
+[28-Jan-2016 16:32:11 Asia/Taipei] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'Connections/ms.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/shiking/public_html/ai_main/ai_in.php on line 1
