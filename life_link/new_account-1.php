@@ -90,7 +90,7 @@ $(function(){
 			var pay = $("#notpayput").val();
 
 			if(pay<30000){
-				$("#warring").html('輸入金額不可小於3,0000!');
+				$("#warring").html('輸入金額不可小於30,000!');
 				$("#button").attr("disabled","disabled");
 				$("#notpayput").focus();
 			}else if(pay >50000){

@@ -886,6 +886,8 @@ class Reservoir{
 			$sncode = $obfnumber."-".date("ymdhis");
 			$insert_gold_m = "INSERT INTO gold_m (number, year, moom, day, z, g, note, level, at, date, time, sncode) VALUES ('$obfnumber', '$year', '$moom', '$day', '$z', '3000', '$note', '1', '0', '$date', '$time', '$sncode')";
 			$query_gold_m = mysql_query($insert_gold_m,$sc);
+		}else{
+			$obusername ="營運球";
 		}
 		
 		//愛心公益

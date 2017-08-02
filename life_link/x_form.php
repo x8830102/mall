@@ -153,8 +153,8 @@ $re_d="new_account-2.php?err=再次確認資料&fuser=".$fuser."&newuser=".$newu
 <form action="~x-form/x_g_p.php" method="post" name="form1" id="form1">
         <input name="sn" type="hidden"  id="sn" value="<?php echo $sn;?>">
         <input name="ter" type="hidden"  id="ter" value="<?php echo $ter;?>">
-        <input name="fuser" type="hidden"  id="fuser" value="<?php echo $fuser;?>">
-		<input name="fuser2" type="hidden" id="fuser2" value="<?php echo $fuser2;?>" />
+        <input name="fuser" type="text"  id="fuser" value="<?php echo $fuser;?>">
+		<input name="fuser2" type="text" id="fuser2" value="<?php echo $fuser2;?>" />
         <input name="businessRatio" type="hidden" id="businessRatio" value="<?php echo $businessRatio;?>" />
         <input name="districtRatio" type="hidden" id="districtRatio" value="<?php echo $districtRatio;?>" />
 		<input name="district" type="hidden"  id="district" value="<?php echo $district;?>">
@@ -170,7 +170,7 @@ $re_d="new_account-2.php?err=再次確認資料&fuser=".$fuser."&newuser=".$newu
         <input name="m_callphone" type="hidden" id="m_callphone" value="<?php echo $m_callphone;?>">
         <input name="m_email" type="hidden"  id="m_email" value="<?php echo $m_email;?>">
         <input name="m_nick" type="hidden"  id="m_nick" value="<?php echo $m_nick;?>">
-        <input name="pudid" type="text"  id="pudid" value="<?php echo $pudid;?>">
+        <input name="pudid" type="hidden"  id="pudid" value="<?php echo $pudid;?>">
         <input name="snumber" type="hidden"  id="snumber" value="<?php echo $snumber;?>">
         <input name="b_pud" type="hidden" id="b_pud" value="<?php echo $b_pud;?>">
         <input name="st" type="hidden"  id="st" value="<?php echo $st;?>">

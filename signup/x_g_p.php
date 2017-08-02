@@ -329,6 +329,7 @@ if ($totalRows_Recnm == 0) {
 			$query_position = mysql_query($select_position, $sc) or die(mysql_error());
 			$row_position = mysql_fetch_assoc($query_position);
 			$p_position = $row_position["filling_position"];
+			$fcard = $row_position['card'];
 			//判斷入單位置
 			/*$m_fuser = $fuser;
 			do{

@@ -258,7 +258,7 @@ class out
 		$row_gposition = mysql_fetch_assoc($query_gposition);
 		$g_user = $row_gposition['card']; //上層的card
 
-		$query_Recxf = sprintf("SELECT * FROM fd WHERE number = '$top_number' and card ='$fcard'");
+		$query_Recxf = sprintf("SELECT * FROM `fd` WHERE `filling_position` = '$top_position'");
 
 		$Recxf = mysql_query($query_Recxf, $sc) or die(mysql_error());
 

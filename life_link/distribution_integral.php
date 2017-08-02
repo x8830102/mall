@@ -4,7 +4,7 @@ date_default_timezone_set('Asia/Taipei');
 mysql_select_db($database_sc, $sc);
 header("Content-Type:text/html; charset=utf-8");
 
-$select_fd ="SELECT * FROM gold_m WHERE at = 0 ORDER BY id DESC";
+$select_fd ="SELECT * FROM gold_m WHERE at = 0 ORDER BY id ASC";
 $query_fd = mysql_query($select_fd, $sc) or die(mysql_error());
 $row_fd = mysql_fetch_assoc($query_fd);
 $num_fd = mysql_num_rows($query_fd);

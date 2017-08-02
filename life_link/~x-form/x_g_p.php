@@ -177,8 +177,8 @@ $card=$row_Recsn['card'];?>
 			$insertCommand13="INSERT INTO o_cash (number, cout, csum, note, date, time) VALUES ('$snumber', '$notpay', '$new_ob', '$onote', '$date', '$time')"; 
 			mysql_query($insertCommand13,$sc);
 			$c_note = "補福音積分".number_format($notpay_cout)."<br>行政事務費3,000";
-			$insert_c_cash="INSERT INTO c_cash (number, cout, csum, note, date, time, sncode) VALUES ('$number', '$notpay_cout', '$notpay_c','$c_note', '$date', '$time', '$sncode')";
-			mysql_query($insert_c_cash,$sc);
+			/*$insert_c_cash="INSERT INTO c_cash (number, cout, csum, note, date, time, sncode) VALUES ('$number', '$notpay_cout', '$notpay_c','$c_note', '$date', '$time', '$sncode')";
+			mysql_query($insert_c_cash,$sc);*/
 			$insert_ar="INSERT INTO pay_ar (number, arrears, Tnumber, date) VALUES ('$number', '$notpay_c', '$Tnumber', '$date')";
 			mysql_query($insert_ar,$sc);
 			
@@ -406,6 +406,7 @@ $card=$row_Recsn['card'];?>
 			$query_position = mysql_query($select_position, $sc) or die(mysql_error());
 			$row_position = mysql_fetch_assoc($query_position);
 			$fposition = $row_position["filling_position"];
+			$fcard = $row_position["card"];
 			//判斷入單位置
 			$m_fuser = $fnumber;
 			/*do{
