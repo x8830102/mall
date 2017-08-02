@@ -136,6 +136,32 @@ class Reservoir{
 			$total = $total + $pay_e;
 		}
 		//
+		//社群組織領導
+		if($pay_n !=0 && $gold > 0)
+		{
+			if($gold - $pay_n >=0)
+			{
+				$gold = $gold - $pay_n;
+			}else{
+				$pay_n = $gold;
+				$gold = $gold - $gold ;
+			}
+			$select_d = "SELECT * FROM pay_n ORDER BY id DESC";
+			$query_d = mysql_query($select_d, $sc) or die(mysql_error());
+			$row_d = mysql_fetch_assoc($query_d);
+			$num_d = mysql_num_rows($query_d);
+			if($num_d == 0)
+			{
+				$psum = 0;
+				$psum = $pay_n + $psum;
+			}else{
+				$psum = $row_d['psum'];
+				$psum = $pay_n + $psum;
+			}
+			$insert_pay_d = "INSERT INTO pay_n (pin,psum,number,card,at,date,time,pud_name) VALUES ('$pay_n','$psum','$new_number','$new_dard',1,'$date','$time','$pud_name')";
+			$query_ind = mysql_query($insert_pay_d, $sc) or die(mysql_error());	
+			$total = $total + $pay_n;
+		}
 		//組織運作1000
 		if($pay_d !=0 && $gold > 0)
 		{
@@ -163,32 +189,6 @@ class Reservoir{
 			$total = $total + $pay_d;
 		}
 		//
-		//社群組織領導
-		if($pay_n !=0 && $gold > 0)
-		{
-			if($gold - $pay_n >=0)
-			{
-				$gold = $gold - $pay_n;
-			}else{
-				$pay_n = $gold;
-				$gold = $gold - $gold ;
-			}
-			$select_d = "SELECT * FROM pay_n ORDER BY id DESC";
-			$query_d = mysql_query($select_d, $sc) or die(mysql_error());
-			$row_d = mysql_fetch_assoc($query_d);
-			$num_d = mysql_num_rows($query_d);
-			if($num_d == 0)
-			{
-				$psum = 0;
-				$psum = $pay_n + $psum;
-			}else{
-				$psum = $row_d['psum'];
-				$psum = $pay_n + $psum;
-			}
-			$insert_pay_d = "INSERT INTO pay_n (pin,psum,number,card,at,date,time,pud_name) VALUES ('$pay_n','$psum','$new_number','$new_dard',1,'$date','$time','$pud_name')";
-			$query_ind = mysql_query($insert_pay_d, $sc) or die(mysql_error());	
-			$total = $total + $pay_n;
-		}
 		//講師2500
 		if($pay_q != 0 && $gold > 0)
 		{
@@ -693,7 +693,7 @@ class Reservoir{
 	}//兩代分潤20500
 	
 
-	//自購
+	//自購球發水庫
 	function oneself_purchase($fnumber,$oneself_number,$oneself_card,$oneself_pud){
 		date_default_timezone_set('Asia/Taipei');
 		include('Connections/sc.php');mysql_query("set names utf8");
@@ -719,47 +719,11 @@ class Reservoir{
 		$pay_l = $row_apud['l'];
 		$pay_m = $row_apud['m'];
 		//推薦人獎金
-			//c_cash串串積分
 			
-			$select_Ccash="SELECT * FROM c_cash WHERE number='$fnumber'  ORDER BY id DESC";
-			$query_Ccash = mysql_query($select_Ccash, $sc) or die(mysql_error());
-			$row_Ccash = mysql_fetch_assoc($query_Ccash);
-			$num_Ccash = mysql_num_rows($query_Ccash);
-
-			$c_in = $fpay*80/100;
-			$note = "福袋推薦獎勵(".$name.")";
-			if($num_Ccash <=0)
-			{
-				$c_csum=$c_in;
-			}else{
-				
-				$c_csum = $row_Ccash['csum'];
-				
-				$c_csum = $c_in+$c_csum;
-				
-			}
-			$inserBonus ="INSERT INTO c_cash(number, cin, csum, note, date, time) VALUES ('$fnumber', '$c_in', '$c_csum', '$note', '$date', '$time')";
-			mysql_query($inserBonus,$sc);
-			//
-			//g_cash消費積分
-			$select_Gcash="SELECT * FROM g_cash WHERE number='$fnumber' ORDER BY id DESC";
-			$query_Gcash = mysql_query($select_Gcash, $sc) or die(mysql_error());
-			$row_Gcash = mysql_fetch_assoc($query_Gcash);
-			$num_Gcash = mysql_num_rows($query_Gcash);
-			$G_in = $fpay*20/100;
-			$note = "福袋推薦獎勵(".$name.")";
-			if($num_Gcash ==0)
-			{
-				$G_csum=$G_in;
-			}else{
-				$G_csum = $row_Gcash['csum'];
-				//echo $G_csum;
-				$G_csum = $G_in+$G_csum;
-				
-			}
-			$inserBonus ="INSERT INTO g_cash(number, cin, csum, note, date, time) VALUES ('$fnumber', '$G_in', '$G_csum', '$note', '$date', '$time')";
-			mysql_query($inserBonus,$sc);
-			//
+			$note ="福袋兌換分享積分<br>帳號:".$m_username;
+			$sncode = $fnumber."-".date("ymdhis");
+			$insert_gold_m = "INSERT INTO gold_m (number, year, moom, day, z, g, note, level, at, date, time, sncode) VALUES ('$fnumber', '$year', '$moom', '$day', '$z', '3000', '$note', '1', '0', '$date', '$time', '$sncode')";
+			$query_gold_m = mysql_query($insert_gold_m,$sc);
 		//
 		//愛心公益
 		$pud_name = "福袋兌換(".$name.")";
@@ -873,7 +837,7 @@ class Reservoir{
 	}
 	function ball($index){
 		/**
-		* 營運球,出局入水庫
+		* 營運球和出局補球入水庫
 		* index : 新補球的位置
 		* obusername : 推薦人的帳號
 		* obfnumber : 推薦人number
@@ -896,7 +860,7 @@ class Reservoir{
 		$oneself_number = $row_obfnumber['number'];
 		$oneself_card = $row_obfnumber['card'];
 		//出局球不在營運球水庫,所以抓不到funmber,m_username
-		if(empty($obusername)){
+		/*if(empty($obusername)){
 			$select = "SELECT * FROM memberdata where number = '$oneself_number'";
 			$query = mysql_query($select, $sc) or die(mysql_error());
 			$result = mysql_fetch_assoc($query);
@@ -910,11 +874,20 @@ class Reservoir{
 				$obfnumber = $result['refer_member_id'];
 			}
 			
+		}*/
+		/*2017.8.1 修改 by paku
+		*
+		*出局球不發分享積分
+		*
+		*/
+		if(!empty($obusername))
+		{
+			$note ="串愛分享積分<br>帳號:".$obusername;
+			$sncode = $obfnumber."-".date("ymdhis");
+			$insert_gold_m = "INSERT INTO gold_m (number, year, moom, day, z, g, note, level, at, date, time, sncode) VALUES ('$obfnumber', '$year', '$moom', '$day', '$z', '3000', '$note', '1', '0', '$date', '$time', '$sncode')";
+			$query_gold_m = mysql_query($insert_gold_m,$sc);
 		}
-		$note ="串愛積分<br>帳號:".$obusername;
-		$sncode = $obfnumber."-".date("ymdhis");
-		$insert_gold_m = "INSERT INTO gold_m (number, year, moom, day, z, g, note, level, at, date, time, sncode) VALUES ('$obfnumber', '$year', '$moom', '$day', '$z', '3000', '$note', '1', '0', '$date', '$time', '$sncode')";
-		$query_gold_m = mysql_query($insert_gold_m,$sc);
+		
 		//愛心公益
 		$pud_name = "補位福袋(".$obusername.")";
 		$select_e = "SELECT * FROM pay_e ORDER BY id DESC";

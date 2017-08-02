@@ -13,6 +13,11 @@ $query_Recsn2 = sprintf("SELECT * FROM bank WHERE number = '$sn' ORDER BY id DES
 $Recsn2 = mysql_query($query_Recsn2, $sc) or die(mysql_error());
 $row_Recsn2 = mysql_fetch_assoc($Recsn2);
 $totalRows_Recsn2 = mysql_num_rows($Recsn2);
+$sql = $pdo_cmg->query("SELECT *,SUM(`arrears`)AS blance FROM `pay_ar` WHERE `number` = '$sn'");
+$result = $sql->fetch();
+$blance = abs($result['blance']);
+$number = $result['number'];
+
 ?><!DOCTYPE html>
 <html>
 <head>
@@ -175,6 +180,10 @@ $totalRows_Recsn2 = mysql_num_rows($Recsn2);
                     <tr class="menu-tr">
                         <td>發票贈與</td>
                         <td colspan="2"></td>
+                    </tr>
+					<tr class="menu-tr">
+                        <td>積分狀況</td>
+                        <td colspan="2"><Span style="font-weight: bold;<?if(empty($number) || $blance==0 ){echo "color:green";}else{echo "color:red";}?>"><?if(empty($number) || $blance==0){echo "無欠款";}else {echo "欠款(目前剩餘:".$blance.")";}?></Span></td>
                     </tr><? }?>
                 </tbody>
             </table>

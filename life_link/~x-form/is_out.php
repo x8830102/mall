@@ -115,7 +115,7 @@ class out
 					$select_out="SELECT f_tog,number FROM memberdata WHERE number IN (SELECT number FROM fd WHERE filling_position =$arr[$i])";
 					$query_out =mysql_query($select_out, $sc) or die(mysql_error());
 					$row_out = mysql_fetch_assoc($query_out);
-					$top_number = $row_out['number'];
+					$top_number = "SN17052300301"; //營運球以happy為原點掃秒出局位置
 					$top_f_tog = $row_out['f_tog'];
 					$meet_the_conditions ="ok";
 				}
@@ -281,13 +281,14 @@ class out
 				$fd_amount = -1;
 				$insertCommand13="INSERT INTO fd (number, card, name, c_fuser, c_guser, gtow, filling_position, fd_amount, year, moom, day, end_y, end_m, end_d, at, date, time) VALUES ('$top_number', '$fdcard', '$m_nick', '$fcard', '$g_user', '$gw', '$index','$fd_amount', '$year', '$moom', '$day', '$nyear', '$moom', '$day', 0, '$date', '$time')"; 
 				mysql_query($insertCommand13,$sc);
+				//補營運球
+				if(!empty($index))
+				{
+					$promotions_odj = new Promotions;
+					$promotions_odj->join_event($index);
+				}
 			}
-			//入單補營運球
-			if(!empty($index))
-			{
-				$promotions_odj = new Promotions;
-				$promotions_odj->join_event($index);
-			}
+			
 			 
 			//從組織營運扣款
 			$pout = 40000;

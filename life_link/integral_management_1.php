@@ -71,7 +71,7 @@ while ($i != 0) {$md = rand(0, 9);if (in_array($md, $pd) == false) {$pd[$i] = $m
 $j = 6;while ($j != 0) {$sum = $sum.(int)$pd[$j];$j--;}
 //
 mysql_select_db($database_sc, $sc);
-$query_Recocz = sprintf("SELECT * FROM o_cash WHERE number = '$sn' ORDER BY id DESC");
+$query_Recocz = sprintf("SELECT * FROM `o_cash` WHERE `number` = '$sn' and `gmid` != 1 ORDER BY id DESC");
 $Recocz = mysql_query($query_Recocz, $sc) or die(mysql_error());
 $row_Recocz = mysql_fetch_assoc($Recocz);
 $totalRows_Recocz = mysql_num_rows($Recocz);
@@ -278,8 +278,8 @@ $decide = rand(1,100000);
 <?php //
 if ($_GET['sd1'] != "") {
 	$sd1=$_GET['sd1'];$sd2=$_GET['sd2'];//echo $sd1;
-	$key="SELECT * FROM o_cash WHERE number = '$sn' && date >= '$sd1' && date <= '$sd2' ORDER BY id DESC";
-	} else {$key="SELECT * FROM o_cash WHERE number = '$sn' ORDER BY id DESC";}
+	$key="SELECT * FROM o_cash WHERE number = '$sn' && date >= '$sd1' && date <= '$sd2' and `gmid` != 1 ORDER BY id DESC";
+	} else {$key="SELECT * FROM o_cash WHERE number = '$sn' and `gmid` != 1 ORDER BY id DESC";}
 //
 $currentPage = $_SERVER["PHP_SELF"];
 

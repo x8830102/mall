@@ -280,4 +280,4 @@ mysql_query($insertCommand13,$sc);
 	}
 //
 //echo "##$$";exit;
-?>?><script type="text/javascript">document.location.href="x_g_fd_c.php";</script>
+?><script type="text/javascript">document.location.href="x_g_fd_c.php";</script>
