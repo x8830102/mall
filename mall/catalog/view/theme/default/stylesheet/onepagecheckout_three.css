@@ -1,0 +1,64 @@
+/* 
+    Created on : 23.12.2016, 14:46:08
+    Author     : Oleh Vasylyev (TobikSoft.com)
+*/
+
+
+.onepagecheckoutleft {
+	width: 26%;
+	float:left;
+}
+.onepagecheckoutright {
+	width: 28%;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.onepagecheckoutmid {
+	width: 100%;
+}
+.extra-width {
+	width: 44%;
+}
+#onepagecheckoutconfirm .col-sm-6 {
+	width: 100% !important;
+}
+#onepagecheckoutconfirm #login .col-sm-6 {
+	width: 49% !important;
+}
+#onepagecheckoutcart {
+	padding-top: 10px;
+	overflow: auto;
+}
+table.quickcheckout-cart {
+	overflow: auto;
+}
+.quickcheckout-cart td.image img {
+	width: 30px;
+	height: auto;
+}
+#voucher-content {
+  margin-bottom: 10px;
+}
+
+#coupon-heading {
+        width: 100%;
+}
+#coupon-content {
+        width: 32%;
+        float: right;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+}
+#voucher-content {
+        width: 32%;
+        float: right;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+}
+#reward-content {
+        width: 32%;
+        float: right;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+}

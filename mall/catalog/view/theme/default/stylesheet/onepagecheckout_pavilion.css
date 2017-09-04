@@ -1,0 +1,41 @@
+#onepagecheckoutconfirm .col-sm-6 {
+	float: left !important;
+}
+
+input {
+    background: #ffffff !important;
+}
+
+select {
+    width: 100% !important;
+    background: #ffffff !important;
+}
+
+textarea {
+    width: 100% !important;
+    resize: vertical !important;
+    background: #ffffff !important;
+    padding-bottom: 0px !important;
+}
+
+.col-sm-5, .col-sm-7 {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    margin-left: 10px !important;
+    margin-right: 5px !important;
+}
+
+.reg-fields {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        margin-left: 5px !important;
+        margin-right: 0px !important;
+        display: flex !important;
+        display: -webkit-flex !important;
+}
+.reg-field {
+        display: -webkit-flex !important;
+        display: flex !important;
+        -webkit-align-items: center !important;
+        align-items: center !important;
+}

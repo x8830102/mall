@@ -1,0 +1,36 @@
+/* 
+    Created on : 23.12.2016, 14:46:08
+    Author     : Oleh Vasylyev (TobikSoft.com)
+*/
+
+
+.onepagecheckoutleft {
+	width: 100%;
+}
+.onepagecheckoutright {
+	width: 100%;
+}
+.onepagecheckoutmid {
+	width: 100%;
+}
+#coupon-heading {
+        width: 100%;
+}
+#coupon-content {
+        width: 32%;
+        float: right;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+}
+#voucher-content {
+        width: 32%;
+        float: right;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+}
+#reward-content {
+        width: 32%;
+        float: right;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+}

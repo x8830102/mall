@@ -1,0 +1,42 @@
+#onepagecheckoutconfirm {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#input-login-email {
+    width: auto;
+}
+#input-login-passwd {
+    width: auto;
+}
+
+#button-login {
+    margin-left: 40%;
+}
+
+.reg-field {
+    width: 30%;
+}
+
+.col-sm-7 {
+    width: 65%;
+}
+
+.oc2.firefox .input-group-btn {
+    display: table-cell;
+}
+
+textarea {
+    height: auto;
+    width: 98%;
+    resize: vertical;
+}
+
+.terms {
+    text-align: right;
+}
+
+select {
+    width: 100%;
+}

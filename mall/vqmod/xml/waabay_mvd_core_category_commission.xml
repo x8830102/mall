@@ -1,0 +1,163 @@
+<modification>
+    <id>Multi Vendor / DropShipper Category Commission - Coded by waabay.com</id>
+    <version>2.0.0</version>
+    <vqmver>2.5.1</vqmver>
+    <author>waabay</author>
+	<email>waabay@gmail.com</email>
+	<website>http://www.waabay.com</website>
+	
+	<file name="catalog/language/english/checkout/checkout.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$_['text_commission']       		 = 'Commission';
+			]]></search>
+			<add><![CDATA[			
+			$_['text_category_commission']       = 'Category Commission';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/controller/checkout/confirm.php">
+		<operation error="skip">
+			<search position="before"><![CDATA[
+			$get_vendor_id = $this->db->query("SELECT v.vendor AS vendor, cm.commission_type AS commission_type, cm.commission AS commission, cm.commission_name as commission_name FROM `" . DB_PREFIX . "vendor` v LEFT JOIN `" . DB_PREFIX . "vendors` vds ON (v.vendor = vds.vendor_id) LEFT JOIN `" . DB_PREFIX . "commission` cm ON (vds.commission_id = cm.commission_id) WHERE v.vproduct_id = '" . (int)$product['product_id'] . "'");
+			]]></search>
+			<add><![CDATA[			
+			$catcom = $this->db->query("SELECT category_id FROM " . DB_PREFIX . "product_to_category WHERE product_id = '" . (int)$product['product_id'] . "' ORDER BY category_id DESC");			
+			if (isset($catcom->rows)) {
+				$cat_commission = false;
+				foreach ($catcom->rows as $datacom) {
+					if ($datacom['category_id']) {
+						$comcat = $this->db->query("SELECT * FROM " . DB_PREFIX . "commission_category WHERE category_id = '" . (int)$datacom['category_id'] . "'");		
+							if (isset($comcat->row['commission_rate'])) {
+								$cat_commission = $comcat->row['commission_rate'];
+								break;
+							}
+					}
+				}
+				
+				if ($cat_commission) {
+					$get_id = $this->db->query("SELECT vendor FROM `" . DB_PREFIX . "vendor` WHERE vproduct_id = '" . (int)$product['product_id'] . "'");
+					
+					if (isset($get_id->row)) {
+						$my_vendor_id = $get_id->row['vendor'];
+					} else { 
+						$my_vendor_id = '0';
+					}
+					
+					if (strpos($cat_commission, '%') !== false) {
+						$cat_commission = str_replace('%', '', $cat_commission);
+						$commission_rate = (float)$cat_commission/100;
+						
+						$commission = (float)$product['total']*($commission_rate);
+						$vendor_id = $my_vendor_id;
+						$vendor_total = (float)$product['total']*(1-($commission_rate));
+						$vendor_tax = $this->tax->getTax($vendor_total, $product['tax_class_id']);
+						$store_tax = $this->tax->getTax($product['total']-$vendor_total, $product['tax_class_id']);
+						$title = '(' . $cat_commission . '%' . ') ' . $this->language->get('text_category_commission');
+					} else {
+						$commission_rate = (float)$cat_commission;
+						$commission_text = $this->currency->format($cat_commission);
+						
+						$commission = $commission_rate;
+						$vendor_id = $my_vendor_id;
+						$vendor_total = (float)($product['total']-($commission_rate));
+						$vendor_tax = $this->tax->getTax($vendor_total, $product['tax_class_id']);
+						$store_tax = $this->tax->getTax($product['total']-$vendor_total, $product['tax_class_id']);
+						$title = '(' . $this->currency->format($commission_rate,$this->config->get('config_currency')) . ') ' . $this->language->get('text_category_commission');
+					}					
+				}
+				
+			}
+			
+			if (!$cat_commission) {
+			]]></add>
+		</operation>
+		
+		<operation error="skip">
+			<search position="before"><![CDATA[
+			if (!$this->config->get('tax_status')) {
+			]]></search>
+			<add><![CDATA[			
+			}
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="admin/language/english/common/menu.php">
+		<operation error="skip">
+			<search position="before"><![CDATA[
+			$_['text_contract_status_modifier'] = 'Contract Status Modifier';
+			]]></search>
+			<add><![CDATA[			
+			$_['text_category_commission_menu'] 	= '分類佣金';
+			$_['text_category_commission_setup'] 	= '佣金設定';
+			$_['text_vdi_category_commission_list'] = '啟用佣金';
+			$_['text_vdi_commission_list'] 			= '佣金清單';
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="admin/controller/common/menu.php">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$data['text_contract_status_modifier'] = $this->language->get('text_contract_status_modifier');
+			]]></search>
+			<add><![CDATA[			
+			$data['text_category_commission_menu'] = $this->language->get('text_category_commission_menu');
+			$data['text_category_commission_setup'] = $this->language->get('text_category_commission_setup');
+			$data['text_vdi_category_commission_list'] = $this->language->get('text_vdi_category_commission_list');
+			$data['text_vdi_commission_list'] = $this->language->get('text_vdi_commission_list');
+			]]></add>
+		</operation>
+
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$data['mvd_coupon'] = $this->url->link('marketing/mvd_coupon', 'token=' . $this->session->data['token'], 'SSL');
+			]]></search>
+			<add><![CDATA[			
+			$data['mvd_category_commission'] = $this->url->link('catalog/mvd_category_commission', 'token=' . $this->session->data['token'], 'SSL');
+			$data['mvd_commission_category'] = $this->url->link('catalog/mvd_commission_category', 'token=' . $this->session->data['token'], 'SSL');
+			]]></add>
+		</operation>
+		
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			$data['vdi_transaction'] = $this->url->link('report/vdi_transaction', 'token=' . $this->session->data['token'], 'SSL');
+			]]></search>
+			<add><![CDATA[
+			$data['vdi_category_commission'] = $this->url->link('report/vdi_category_commission', 'token=' . $this->session->data['token'], 'SSL');
+			$data['vdi_category_commission_menu'] = ($this->config->get('mvd_com_cat_status') == '1' ? true : false);
+			]]></add>
+		</operation>
+	</file>
+
+	<file name="admin/view/template/common/menu.tpl">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			<li><a href="<?php echo $mvd_add_courier; ?>"><?php echo $text_add_courier; ?></a></li>
+			]]></search>
+			<add><![CDATA[
+			<li><a class="parent"><?php echo $text_category_commission_menu; ?></a>
+				  <ul>
+					<li><a href="<?php echo $mvd_category_commission; ?>"><?php echo $text_category_commission_setup; ?></a></li>
+					<li><a href="<?php echo $mvd_commission_category; ?>"><?php echo $text_vdi_category_commission_list; ?></a></li>
+				  </ul>
+				</li>
+			]]></add>
+		</operation>
+	</file>
+	
+	<file name="admin/view/template/common/vdi_menu.tpl">
+		<operation error="skip">
+			<search position="after"><![CDATA[
+			<li><a href="<?php echo $vdi_report_product_purchased; ?>"><?php echo $text_report_product_purchased; ?></a></li>
+			]]></search>
+			<add><![CDATA[
+			<?php if ($vdi_category_commission_menu) { ?>
+			<li><a href="<?php echo $vdi_category_commission; ?>"><?php echo $text_vdi_commission_list; ?></a></li>
+			<?php } ?>
+			]]></add>
+		</operation>
+	</file>
+</modification>

@@ -1,0 +1,23 @@
+---------- Date: 2017-07-20 15:48:39 ~ IP : 202.39.70.43 ----------
+REQUEST URI : /admin/index.php?route=catalog/mvd_commission_category&token=b5052c1acee3a0dd240f952b05e2cc69
+MOD DETAILS:
+   modFile   : /home/twlifelinkcom/public_html/mall/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/twlifelinkcom/public_html/mall/vqmod/xml/waabay_mvd_mbanner_20160427.xml
+   id        : Multi Vendor/Dropshipper Vendor Landing Page Extender  - Coded by waabay.com
+   version   : 1.0.0
+   vqmver    : 2.2.5
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/mvd_store_box.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/module/mvd_store_box.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/default/template/module/mvd_store_box.tpl] (SKIPPED)
+----------------------------------------------------------------------
+
+

@@ -1,0 +1,1076 @@
+2017-04-17 14:45:34 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:01:51 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:06:46 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:09:12 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:11:59 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:28:48 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:32:30 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+2017-04-17 15:52:19 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+2017-04-17 16:08:48 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+2017-04-17 17:38:17 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+2017-04-21 9:52:22 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------
+2017-04-21 9:52:25 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------
+2017-04-21 9:52:49 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------
+2017-04-21 9:52:59 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------
+2017-04-25 16:15:25 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: Auto Sub-category
+CODE: 'filter_category_id' => $category_id,
+LINE: 174
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------
+2017-04-26 9:19:05 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: Auto Sub-category
+CODE: 'filter_category_id' => $category_id,
+LINE: 174
+----------------------------------------------------------------
+MOD: UltraImageManager
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1482
+FILE: admin/controller/catalog/product.php
+CODE: $data['tab_openbay'] = $this->language->get('tab_openbay');
+LINE: 642
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_delete; ?>" id="button-delete" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+LINE: 15
+CODE: <div class="modal-dialog modal-lg">
+LINE: 0
+CODE: <input type="checkbox" name="path[]" value="<?php echo $image['path']; ?>" />
+LINE: 33
+LINE: 39
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 26
+CODE: <div class="col-sm-3 text-center">
+LINE: 29
+CODE: <?php echo $image['name']; ?></label>
+LINE: 37
+LINE: 46
+CODE: $('a.directory').on('click', function(e) {
+LINE: 82
+CODE: $('.pagination a').on('click', function(e) {
+LINE: 94
+CODE: $('#button-parent').on('click', function(e) {
+LINE: 107
+FILE: admin/view/javascript/common.js
+CODE: $(document).delegate('a[data-toggle=\'image\']', 'click', function(e) {
+LINE: 130
+FILE: admin/controller/common/filemanager.php
+CODE: $images = array_splice($images, ($page - 1) * 16, 16);
+LINE: 49
+CODE: $pagination->limit = 16;
+LINE: 192
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace(array('../', '..\\', '..'), '', $this->request->get['directory']), '/');
+LINE: 17
+LINE: 220
+LINE: 307
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------
+2017-04-26 9:29:13 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 58
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 20
+LINE: 37
+LINE: 54
+LINE: 65
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 21
+LINE: 27
+----------------------------------------------------------------
+MOD: R.Gen OpenCart Themes
+FILE: system/engine/front.php
+CODE: public function dispatch($action, $error) {
+LINE: 24
+CODE: public function language($language) {
+LINE: 89
+FILE: catalog/model/tool/image.php
+CODE: public function resize($filename, $width, $height) {
+LINE: 2
+CODE: $image->resize($width, $height);
+LINE: 33
+FILE: admin/model/design/layout.php
+CODE: $this->db->query("DELETE FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 39
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "layout_module WHERE layout_id = '" . (int)$layout_id . "'");
+LINE: 110
+FILE: admin/model/extension/module.php
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '%." . (int)$module_id . "'");
+LINE: 12
+CODE: $this->db->query("DELETE FROM `" . DB_PREFIX . "layout_module` WHERE `code` LIKE '" . $this->db->escape($code . '.%') . "'");
+NOT FOUND!
+FILE: catalog/controller/common/column_left.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/column_right.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_bottom.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/content_top.php
+CODE: foreach ($modules as $module) {
+LINE: 55
+CODE: $part = explode('.', $module['code']);
+LINE: 77
+FILE: catalog/controller/common/header.php
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 159
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+LINE: 74
+FILE: catalog/controller/module/featured.php
+CODE: 'rating'      => $rating,
+LINE: 72
+FILE: catalog/controller/product/category.php
+CODE: 'href'  => $this->url->link('product/category', 'path=' . $this->request->get['path'] . '_' . $result['category_id'] . $url)
+LINE: 164
+CODE: 'minimum'     => $result['minimum'] > 0 ? $result['minimum'] : 1,
+LINE: 226
+FILE: catalog/controller/module/category.php
+CODE: if ($category['category_id'] == $data['category_id']) {
+LINE: 36
+FILE: catalog/controller/product/product.php
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 391
+----------------------------------------------------------------
+MOD: Auto Sub-category
+CODE: 'filter_category_id' => $category_id,
+LINE: 174
+----------------------------------------------------------------
+MOD: UltraImageManager
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <?php echo $footer; ?>
+LINE: 1482
+FILE: admin/controller/catalog/product.php
+CODE: $data['tab_openbay'] = $this->language->get('tab_openbay');
+LINE: 642
+FILE: admin/view/template/common/filemanager.tpl
+CODE: <button type="button" data-toggle="tooltip" title="<?php echo $button_delete; ?>" id="button-delete" class="btn btn-danger"><i class="fa fa-trash-o"></i></button>
+LINE: 15
+CODE: <div class="modal-dialog modal-lg">
+LINE: 0
+CODE: <input type="checkbox" name="path[]" value="<?php echo $image['path']; ?>" />
+LINE: 33
+LINE: 39
+CODE: <?php foreach (array_chunk($images, 4) as $image) { ?>
+LINE: 26
+CODE: <div class="col-sm-3 text-center">
+LINE: 29
+CODE: <?php echo $image['name']; ?></label>
+LINE: 37
+LINE: 46
+CODE: $('a.directory').on('click', function(e) {
+LINE: 82
+CODE: $('.pagination a').on('click', function(e) {
+LINE: 94
+CODE: $('#button-parent').on('click', function(e) {
+LINE: 107
+FILE: admin/view/javascript/common.js
+CODE: $(document).delegate('a[data-toggle=\'image\']', 'click', function(e) {
+LINE: 130
+FILE: admin/controller/common/filemanager.php
+CODE: $images = array_splice($images, ($page - 1) * 16, 16);
+LINE: 49
+CODE: $pagination->limit = 16;
+LINE: 192
+CODE: $directory = rtrim(DIR_IMAGE . 'catalog/' . str_replace(array('../', '..\\', '..'), '', $this->request->get['directory']), '/');
+LINE: 17
+LINE: 220
+LINE: 307
+----------------------------------------------------------------
+MOD: 台灣縣市慣用排序
+FILE: admin/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 68
+FILE: catalog/model/localisation/zone.php
+CODE: $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "zone WHERE country_id = '" . (int)$country_id . "' AND status = '1' ORDER BY name");
+LINE: 12
+----------------------------------------------------------------

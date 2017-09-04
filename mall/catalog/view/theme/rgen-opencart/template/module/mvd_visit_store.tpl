@@ -1,0 +1,262 @@
+<?php echo $header; ?>
+<div class="container">
+  <ul class="breadcrumb">
+    <?php foreach ($breadcrumbs as $breadcrumb) { ?>
+    <li><a href="<?php echo $breadcrumb['href']; ?>"><?php echo $breadcrumb['text']; ?></a></li>
+    <?php } ?>
+  </ul>
+  <div class="row"><?php echo $column_left; ?>
+    <?php if ($column_left && $column_right) { ?>
+    <?php $class = 'col-sm-6'; ?>
+    <?php } elseif ($column_left || $column_right) { ?>
+    <?php $class = 'col-sm-9'; ?>
+    <?php } else { ?>
+    <?php $class = 'col-sm-12'; ?>
+    <?php } ?>
+    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+      <!--<h2><?php echo $heading_title_visit_store; ?></h2>-->
+	  <!--information-->
+      <!--<div class="row">
+		<div class="col-sm-8">
+		  <?php if ($thumb) { ?>
+			<img src="<?php echo $thumb; ?>" alt="<?php echo $heading_title_visit_store; ?>" title="<?php echo $heading_title_visit_store; ?>" style="border-radius:50%" />
+		  <?php } ?>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_company; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $company; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_vendor_rating; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <div class="rating">
+				<?php for ($i = 1; $i <= 5; $i++) { ?>
+				<?php if ($rating < $i) { ?>
+				<span class="fa fa-stack"><i class="fa fa-star-o fa-stack-1x"></i></span>
+				<?php } else { ?>
+				<span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
+				<?php } ?>
+				<?php } ?>
+				</div>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_name; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $name; ?>
+		    </div>
+		  </div>
+		  <?php if ($show_detail) { ?>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_location; ?>   
+		    </div>
+		    <div class="col-xs-5 col-sm-5">
+		       <?php echo $location; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_gps_location; ?>   
+		    </div>
+		    <div class="col-xs-5 col-sm-5">
+		       <?php echo $geocode; ?>
+		    </div>
+		  </div>
+		  <?php if ($fax) { ?>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_fax; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $fax; ?>
+		    </div>
+		  </div>
+		  <?php } ?>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_email; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $email; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_address_1; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $address_1; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_city; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $city; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_country; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $country; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_zone; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $zone; ?>
+		    </div>
+		  </div>
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		    <?php echo $text_postcode; ?>   
+		    </div>
+		    <div class="col-xs-3 col-sm-3">
+		       <?php echo $postcode; ?>
+		    </div>
+		  </div>
+		  <br/>
+		</div>
+		<?php if ($geocode) { ?>
+		<div class="col-sm-3">
+		  <div class="row">
+		    <div class="col-xs-3 col-sm-3">
+		       <img src="https://maps.googleapis.com/maps/api/staticmap?center=<?php echo $geocode; ?>&zoom=17&size=200x200&maptype=roadmap&markers=color:red%7Clabel:A%7C<?php echo $geocode; ?>" style="padding:1px;border:1px solid #dddddd;">
+		    </div>
+		  </div>
+		</div>
+		<?php } ?>
+	    <?php } ?>
+	  </div>
+	  <div class="row">
+		<div class="col-xs-12 col-sm-12">
+		  <?php echo $description; ?>   
+		</div>
+	  </div>-->
+	  <!--information-->
+      <hr>
+      <?php if ($products) { ?>
+      <p><a href="<?php echo $compare; ?>" id="compare-total"><?php echo $text_compare; ?></a></p>
+      <div class="row">
+        <div class="col-md-4 hidden-xs">
+          <div class="btn-group hidden-xs">
+            <button type="button" id="list-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_list; ?>"><i class="fa fa-th-list"></i></button>
+            <button type="button" id="grid-view" class="btn btn-default" data-toggle="tooltip" title="<?php echo $button_grid; ?>"><i class="fa fa-th"></i></button>
+          </div>
+        </div>
+        <div class="col-md-2 text-right">
+          <label class="control-label" for="input-sort"><?php echo $text_sort; ?></label>
+        </div>
+        <div class="col-md-3 text-right">
+          <select id="input-sort" class="form-control" onchange="location = this.value;">
+            <?php foreach ($sorts as $sorts) { ?>
+            <?php if ($sorts['value'] == $sort . '-' . $order) { ?>
+            <option value="<?php echo $sorts['href']; ?>" selected="selected"><?php echo $sorts['text']; ?></option>
+            <?php } else { ?>
+            <option value="<?php echo $sorts['href']; ?>"><?php echo $sorts['text']; ?></option>
+            <?php } ?>
+            <?php } ?>
+          </select>
+        </div>
+        <div class="col-md-1 text-right">
+          <label class="control-label" for="input-limit"><?php echo $text_limit; ?></label>
+        </div>
+        <div class="col-md-2 text-right">
+          <select id="input-limit" class="form-control" onchange="location = this.value;">
+            <?php foreach ($limits as $limits) { ?>
+            <?php if ($limits['value'] == $limit) { ?>
+            <option value="<?php echo $limits['href']; ?>" selected="selected"><?php echo $limits['text']; ?></option>
+            <?php } else { ?>
+            <option value="<?php echo $limits['href']; ?>"><?php echo $limits['text']; ?></option>
+            <?php } ?>
+            <?php } ?>
+          </select>
+        </div>
+      </div>
+      <br />
+      <style>
+      	@media (min-width: 768px) {
+		.product-grid h4 {min-height:45px }
+		.product-grid {min-height: 521px;}
+		}
+		@media (max-width: 768px) {
+		.product-grid {width: 85%;margin-left: 5%}
+		}
+		@media (max-width: 600px) {
+			.image img { width: 100% }
+		}
+      </style>
+      <div class="row">
+        <?php foreach ($products as $product) { ?>
+
+        <div class="product-layout product-list col-xs-12">
+          <div class="product-thumb">
+            <div class="image"><a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" /></a></div>
+            <div>
+              <div class="caption">
+                <h4 style=""><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></h4>
+                <p style="max-height: 63px;overflow: hidden;"><?php echo $product['description']; ?>..</p>
+                <?php if ($product['rating']) { ?>
+                <div class="rating">
+                  <?php for ($i = 1; $i <= 5; $i++) { ?>
+                  <?php if ($product['rating'] < $i) { ?>
+                  <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <?php } else { ?>
+                  <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span>
+                  <?php } ?>
+                  <?php } ?>
+                </div>
+                <?php } ?>
+                <?php if ($product['price']) { ?>
+                <p class="price" style="color: #fff;">
+                  <?php if (!$product['special']) { ?>
+                  原價：<?php echo $product['price']; ?>
+                  <?php } else { ?>
+                  原價：<span class="price-old" style="margin-right: 10px"><?php echo $product['price']; ?></span><span class="price-new"  style="color: rgba(232,90,90,1);font-size: 17px">特價：<?php echo $product['special']; ?></span> 
+                  <?php } ?>
+                  <?php if ($product['tax']) { ?>
+                  <!--<span class="price-tax"   style="color: rgba(232,90,90,1);font-size: 17px"><?php echo $text_tax; ?> <?php echo $product['tax']; ?></span>-->
+                  <?php } ?>
+                </p>
+                <?php } ?>
+              </div>
+              <div class="button-group">
+                <button type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span class="hidden-md"><?php echo $button_cart; ?></span></button>
+                <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
+                <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button>
+                <a href="index.php?route=quickcheckout/checkout"><button type="button"  onclick="cart.add('<?php echo $product['product_id']; ?>');" >結帳</button></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 text-left"><?php echo $pagination; ?></div>
+        <div class="col-sm-6 text-right"><?php echo $results; ?></div>
+      </div>
+      <?php } ?>
+      <?php if (!$products) { ?>
+      <p><?php echo $text_empty; ?></p>
+      <div class="buttons">
+        <div class="pull-right"><a href="<?php echo $continue; ?>" class="btn btn-primary"><?php echo $button_continue; ?></a></div>
+      </div>
+      <?php } ?>
+      <?php echo $content_bottom; ?></div>
+    <?php echo $column_right; ?></div>
+</div>
+<?php echo $footer; ?>

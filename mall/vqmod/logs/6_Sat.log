@@ -1,0 +1,46 @@
+---------- Date: 2017-06-17 09:49:06 ~ IP : 202.39.70.43 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /home/twlifelinkcom/public_html/mall/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/twlifelinkcom/public_html/mall/vqmod/xml/waabay_mvd_mbanner_20160427.xml
+   id        : Multi Vendor/Dropshipper Vendor Landing Page Extender  - Coded by waabay.com
+   version   : 1.0.0
+   vqmver    : 2.2.5
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/mvd_store_box.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/module/mvd_store_box.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/default/template/module/mvd_store_box.tpl] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-06-17 10:02:14 ~ IP : 202.39.70.43 ----------
+REQUEST URI : /admin/index.php?route=common/dashboard&token=735c3575695ec6009450a668ba51c323
+MOD DETAILS:
+   modFile   : /home/twlifelinkcom/public_html/mall/vqmod/xml/waabay_mvd_core_20150404_.xml
+   id        : Multi Vendor Drop Shipper 2.0.2.0 - Coded by waabay.com
+   version   : 1.0
+   vqmver    : 2.5.1
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [admin/language/english/common/profile.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/checkout.php] (SKIPPED)
+
+MOD DETAILS:
+   modFile   : /home/twlifelinkcom/public_html/mall/vqmod/xml/waabay_mvd_mbanner_20160427.xml
+   id        : Multi Vendor/Dropshipper Vendor Landing Page Extender  - Coded by waabay.com
+   version   : 1.0.0
+   vqmver    : 2.2.5
+   author    : waabay
+VQModObject::parseMods - Could not resolve path for [catalog/controller/module/mvd_store_box.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/language/english/module/mvd_store_box.php] (SKIPPED)
+VQModObject::parseMods - Could not resolve path for [catalog/view/theme/default/template/module/mvd_store_box.tpl] (SKIPPED)
+----------------------------------------------------------------------
+
+
