@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<body>
+<body>ss
 
 <iframe id="myframe" width="1003" height="550" scrolling="no" onload="myFunction()" src="http://mall.lifelink.com.tw/"></iframe>
 
